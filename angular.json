@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "a85bccaa-e85e-4b28-9c1f-733bc0f0681e"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -14,7 +17,9 @@
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
+        
         "build": {
+          
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/blogDoFabio",
@@ -108,4 +113,5 @@
     }
   },
   "defaultProject": "blogDoFabio"
+  
 }
