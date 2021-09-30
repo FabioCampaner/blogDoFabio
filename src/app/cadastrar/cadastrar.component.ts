@@ -10,14 +10,13 @@ import { Router } from '@angular/router';
 })
 export class CadastrarComponent implements OnInit {
 
-  user: User = new User
+  user: User = new User()
   confirmarSenha: string
   tipoUsuario: string
 
   constructor(
     private authService: AuthService,
-    private router: Router,
-    
+    private router: Router    
   ) { }
 
   ngOnInit() {
