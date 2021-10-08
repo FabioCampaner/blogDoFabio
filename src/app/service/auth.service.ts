@@ -32,6 +32,9 @@ export class AuthService {
   cadastrar(user:User):Observable<User>{
     return this.http.post<User>('https://blogdofabio.herokuapp.com/usuarios/cadastrar', user)
   }
+  putUser(user: User): Observable<User>{
+    return this.http.put<User>('https://blogdofabio.herokuapp.com/usuarios/atualizar', user)
+  }
 
   getByIdUser(id:number):Observable<User>{
     return this.http.get<User>(`http://blogdofabio.herokuapp.com/usuarios/${id}`)
